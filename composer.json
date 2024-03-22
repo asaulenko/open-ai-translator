@@ -1,0 +1,41 @@
+{
+    "name": "spryker-community/open-ai-translator",
+    "type": "library",
+    "description": "OpenAiTranslator module",
+    "license": "proprietary",
+    "require": {
+        "php": ">=8.0",
+        "spryker-community/open-ai-client": "^0.1.0",
+        "spryker/kernel": "^3.73.0"
+    },
+    "require-dev": {
+        "spryker/code-sniffer": "*"
+    },
+    "suggest": {
+        "spryker-community/ai-translator": "If you want to use OpenAiTranslatorEnginePlugin."
+    },
+    "autoload": {
+        "psr-4": {
+            "SprykerCommunity\\": "src/SprykerCommunity/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SprykerCommunityTest\\": "tests/SprykerCommunityTest/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "cs-check": "phpcs -p -s --standard=vendor/spryker/code-sniffer/SprykerStrict/ruleset.xml src/ tests/",
+        "cs-fix": "phpcbf -p --standard=vendor/spryker/code-sniffer/SprykerStrict/ruleset.xml src/ tests/"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.0.x-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
