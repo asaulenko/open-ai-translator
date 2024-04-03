@@ -1,8 +1,10 @@
 {
     "name": "spryker-community/open-ai-translator",
     "type": "library",
-    "description": "OpenAiTranslator module",
-    "license": "proprietary",
+    "description": "The OpenAiTranslator module provides AI translation functionality using OpenAI's ChatGPT as translation engine",
+    "keywords": ["spryker", "AI", "openAI", "translator"],
+    "homepage": "https://github.com/spryker-community/open-ai-translator",
+    "license": "MIT",
     "require": {
         "php": ">=8.0",
         "spryker-community/open-ai-client": "^0.1.0",
