@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+language: "en-US"
+early_access: false
+reviews:
+  profile: "chill"
+  request_changes_workflow: false
+  high_level_summary: true
+  poem: true
+  review_status: true
+  collapse_walkthrough: false
+  path_instructions:
+    - path: "**/*Plugin.php"
+      instructions: |
+        Review the following code of a plugin class written in PHP. Ensure that:
+        - There is no private or protected methods an a class.
+        - There is no logic inside the methods.
+        - The code inside each and every method must only get the Client class object by calling "$this->getClient()", call the relevant method on this object and return the value returned from this method.
+        - There must be exactly one call to a client method inside each plugin method.
+  auto_review:
+    enabled: true
+    drafts: false
+chat:
+  auto_reply: true
