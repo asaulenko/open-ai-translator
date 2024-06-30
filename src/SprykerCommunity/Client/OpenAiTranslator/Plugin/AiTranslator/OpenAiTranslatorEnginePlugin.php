@@ -31,4 +31,15 @@ class OpenAiTranslatorEnginePlugin extends AbstractPlugin implements TranslatorE
     {
         return $this->getClient()->translate($aiTranslatorRequestTransfer);
     }
+
+    public function fooBar(): void
+    {
+        $a = 5;
+        $b = 10;
+        $c = 7;
+
+        if ($a < $b) {
+            $c = 12;
+        }
+    }
 }
